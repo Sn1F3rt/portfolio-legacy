@@ -25,10 +25,10 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:200,200i,300,300i,400,400i,500,500i,600,600i,700,700i');
 
 /* Linear Icons Font */
-@import url('./fonts/linear-icons-font/style.css');
+@import url('https://cdn.linearicons.com/free/1.0.0/icon-font.min.css');
 
 /* FontAwesome Free Icons Font */
-@import url('./fonts/fontawesome-free-5.12.1-web/css/all.min.css');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css');
 
 
 /* ------------------------------------------------------------
@@ -1344,11 +1344,15 @@ textarea.form-control, textarea.form-control:focus {
 }
 
 .skills-second-style .skill-container.skill-3 .skill-percentage {
+  width:90%;
+}
+
+.skills-second-style .skill-container.skill-4 .skill-percentage {
   width:100%;
 }
 
 .skills-second-style .skill-container.skill-5 .skill-percentage {
-  width: 100%;
+  width: 80%;
 }
 
 .skills-second-style .skill-container.skill-6 .skill-percentage {
@@ -1356,8 +1360,21 @@ textarea.form-control, textarea.form-control:focus {
 }
 
 .skills-second-style .skill-container.skill-7 .skill-percentage {
-  width: 75%;
+  width: 100%;
 }
+
+.skills-second-style .skill-container.skill-8 .skill-percentage {
+  width: 60%;
+}
+
+.skills-second-style .skill-container.skill-9 .skill-percentage {
+  width: 100%;
+}
+
+.skills-second-style .skill-container.skill-10 .skill-percentage {
+  width: 100%;
+}
+
 
 /* --- End of Skills Values --- */
 
