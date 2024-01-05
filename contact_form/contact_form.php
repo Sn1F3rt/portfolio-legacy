@@ -1,19 +1,19 @@
 <?php
 
 // configure
-$from = 'contact@sn1f3rt.me'; // Replace it with Your Hosting Admin email. REQUIRED!
+$from = 'sayan@sn1f3rt.me'; // Replace it with Your Hosting Admin email. REQUIRED!
 $sendTo = 'sayan@sn1f3rt.me'; // Replace it with Your email. REQUIRED!
 $subject = 'New message from contact form';
 $fields = array('name' => 'Name', 'email' => 'Email', 'subject' => 'Subject', 'message' => 'Message'); // array variable name => Text to appear in the email. If you added or deleted a field in the contact form, edit this array.
-$okMessage = 'Contact form successfully submitted. Thank you, I will get back to you soon!';
+$okMessage = 'Contact form successfully submitted. Thank you, I will get back to you as soon as possible!';
 $errorMessage = 'There was an error while submitting the form. Please try again later.';
 
 // let's do the sending
 
 if(isset($_POST['g-recaptcha-response']) && !empty($_POST['g-recaptcha-response'])):
-    //your site secret key
-    $secret = '6LdqmCAUAAAAANONcPUkgVpTSGGqm60cabVMVaON';
-    //get verify response data
+    // your site secret key
+    $secret = '6LfyY0cpAAAAAOKHVSqzUPc-gsXVmPkwHI-QvAz2';
+    // get verify response data
 
     $c = curl_init('https://www.google.com/recaptcha/api/siteverify?secret='.$secret.'&response='.$_POST['g-recaptcha-response']);
     curl_setopt($c, CURLOPT_RETURNTRANSFER, 1);

@@ -1,11 +1,3 @@
-/*
-* Template Name: BreezyCV - Resume / CV / vCard / Portfolio Template
-* Author: LMPixels
-* Author URL: http://themeforest.net/user/lmpixels
-* Version: 1.5.0
-*/
-
-/*
 document.addEventListener('DOMContentLoaded', function(){
     var script = document.createElement('script');
     script.src = 'https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js';
@@ -13,10 +5,10 @@ document.addEventListener('DOMContentLoaded', function(){
         particlesJS("snow", {
             "particles": {
                 "number": {
-                    "value": 200,
+                    "value": 50,
                     "density": {
                         "enable": true,
-                        "value_area": 800
+                        "value_area": 1000
                     }
                 },
                 "color": {
@@ -41,7 +33,7 @@ document.addEventListener('DOMContentLoaded', function(){
                 },
                 "move": {
                     "enable": true,
-                    "speed": 5,
+                    "speed": 3,
                     "direction": "bottom",
                     "random": true,
                     "straight": false,
@@ -70,7 +62,7 @@ document.addEventListener('DOMContentLoaded', function(){
     }
     document.head.append(script);
 });
-*/
+
 
 (function($) {
 "use strict";
@@ -343,7 +335,7 @@ document.addEventListener('DOMContentLoaded', function(){
                     youtube: {
                       index: 'youtube.com/', // String that detects type of video (in this case YouTube). Simply via url.indexOf(index).
 
-                      id: null, // String that splits URL in a two parts, second part should be %id%
+                      id: null, // String that splits URL in two parts, second part should be %id%
                       // Or null - full URL will be returned
                       // Or a function that should return %id%, for example:
                       // id: function(url) { return 'parsed id'; }
@@ -369,14 +361,6 @@ document.addEventListener('DOMContentLoaded', function(){
                  values.title = item.el.attr('title');
                 }
             },
-        });
-
-        //Google Maps
-        $("#map").googleMap({
-            zoom: 16 // Google Map ZOOM. You can change this value
-        });
-        $("#map").addMarker({
-            address: "S601 Townsend Street, San Francisco, California, USA", // Your Address. Change it
         });
     });
 
