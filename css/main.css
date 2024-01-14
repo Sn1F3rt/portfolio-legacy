@@ -2828,6 +2828,8 @@ blockquote {
 }
 
 .title-block .sp-subtitle {
+  display: inline-flex;
+  white-space: pre;
   color: #aaa;
   font-size: 21px;
   font-weight: 300;
